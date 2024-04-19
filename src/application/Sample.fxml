@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="Won" prefHeight="635.0" prefWidth="899.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <FlowPane layoutX="533.0" layoutY="217.0" prefHeight="226.0" prefWidth="228.0">
+         <children>
+            <Button fx:id="button1" mnemonicParsing="false" onAction="#b1" prefHeight="75.0" prefWidth="75.0">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font></Button>
+            <Button fx:id="button2" mnemonicParsing="false" onAction="#b2" prefHeight="75.0" prefWidth="75.0">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="button3" mnemonicParsing="false" onAction="#b3" prefHeight="75.0" prefWidth="75.0">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="button4" mnemonicParsing="false" onAction="#b4" prefHeight="75.0" prefWidth="75.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="button5" mnemonicParsing="false" onAction="#b5" prefHeight="75.0" prefWidth="75.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Button>
+            <Button fx:id="button6" mnemonicParsing="false" onAction="#b6" prefHeight="75.0" prefWidth="75.0">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="button7" mnemonicParsing="false" onAction="#b7" prefHeight="75.0" prefWidth="75.0">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="button8" mnemonicParsing="false" onAction="#b8" prefHeight="75.0" prefWidth="75.0">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="button9" mnemonicParsing="false" onAction="#b9" prefHeight="75.0" prefWidth="75.0">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </FlowPane>
+      <Button fx:id="st" layoutX="585.0" layoutY="131.0" mnemonicParsing="false" onAction="#start" style="-fx-background-color: #5995fd;" text="Start Game" textFill="WHITE">
+         <font>
+            <Font name="Cambria Bold Italic" size="24.0" />
+         </font>
+      </Button>
+      <Text fx:id="winnerText" layoutX="563.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tec-Tac-Toe">
+         <font>
+            <Font name="Cambria Bold Italic" size="36.0" />
+         </font>
+      </Text>
+      <Button layoutX="605.0" layoutY="490.0" mnemonicParsing="false" onAction="#restartGame" style="-fx-background-color: #5995fd;" text="Restart" textFill="WHITE">
+         <font>
+            <Font name="Cambria Bold Italic" size="24.0" />
+         </font>
+      </Button>
+      <AnchorPane prefHeight="635.0" prefWidth="418.0" style="-fx-background-color: #5995fd;">
+         <children>
+            <ImageView fitHeight="234.0" fitWidth="475.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../University%20courses/Algorithms/xo.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lb1" layoutX="14.0" layoutY="249.0" text="Chose 'X' if you want be First player :" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <RadioButton layoutX="251.0" layoutY="248.0" mnemonicParsing="false" selected="true" text="X" textFill="#fcf9f9" fx:id="x">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="o" layoutX="325.0" layoutY="248.0" mnemonicParsing="false" text="O" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </RadioButton>
+            <Label layoutX="25.0" layoutY="299.0" text="Select Scenario :" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="scenarios" layoutX="209.0" layoutY="298.0" prefWidth="150.0" promptText="Select  Scenario:" />
+            <TextField fx:id="player1Name" layoutX="194.0" layoutY="335.0" />
+            <Label layoutX="24.0" layoutY="337.0" text="Name Of Player x :" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="374.0" text="Name of Player o :" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="player2Name" layoutX="194.0" layoutY="372.0" />
+            <Spinner fx:id="roundsSpinner" layoutX="158.0" layoutY="455.0" />
+            <Label layoutX="82.0" layoutY="456.0" text="Round:" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="player1Label" layoutX="54.0" layoutY="513.0" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="player2Label" layoutX="54.0" layoutY="552.0" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="player1ScoreLabel" layoutX="127.0" layoutY="510.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="player2ScoreLabel" layoutX="121.0" layoutY="549.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="21.0" layoutY="409.0" text="Enter Number of rounds:" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="rounds" layoutX="234.0" layoutY="408.0" />
+         </children>
+      </AnchorPane>
+      <Text fx:id="Win" fill="RED" layoutX="522.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="Cambria Bold Italic" size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
